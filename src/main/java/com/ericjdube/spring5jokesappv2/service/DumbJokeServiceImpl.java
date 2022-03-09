@@ -23,7 +23,5 @@ public class DumbJokeServiceImpl implements JokeService {
     @Override
     public String getJoke() {
         return jokeList.get(ThreadLocalRandom.current().nextInt(0, jokeList.size()));
-
-        //return "horse walks into a bar...";
     }
 }
